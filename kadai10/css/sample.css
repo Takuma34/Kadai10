@@ -1,0 +1,115 @@
+/* 全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー */
+header {
+  background-color: #3b82c4;
+  letter-spacing: 10px;
+  color: white;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.title {
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+/* メインエリア */
+#mainarea {
+  margin: 20px;
+}
+
+#mainTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#mainTable td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#mainTable tr:last-child td {
+  border-bottom: none;
+}
+
+/*   履歴の表示　*/
+.show {
+  background-color: blanchedalmond;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  max-width: 50%;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sender,
+.dateshow {
+  font-weight: bold;
+  border-radius: 7px;
+  max-width: 50%;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* チャット部分 */
+.chat-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-container .yourname {
+  font-weight: bold;
+}
+
+#nameoption input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* 隙間の追加 */
+}
+
+#textroom textarea {
+  width: 100%;
+  height: 120px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: right;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #4caf50;
+}
+
+ul li#remove {
+  background-color: #f44336;
+}
